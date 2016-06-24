@@ -2,7 +2,11 @@
 
 ## Installation
 1. This site was built using Vagrant and the "ubuntu/trusy64" VM Box
-2. Once the vagrant box is up and running, install python-dev, libmysqlclient-dev (if using mysql), python-pip, and python-virtualenv (if using virtualenv)
+2. Once the vagrant box is up and running, install:
+  * python-dev
+  * libmysqlclient-dev (if using mysql, other databases will require different libraries)
+  * python-pip
+  * python-virtualenv (if using virtualenv)
 3. If using virtualenv, enable first, and the install the requirements.txt file using pip
 4. Obtain or create a cred.py file and including in the fls folder along with settings.py. This file should look something like:
   * DB_NAME = "db_name"
