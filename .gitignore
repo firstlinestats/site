@@ -1,1 +1,10 @@
 .vagrant
+*.pyc
+*.pyc
+*~
+api_urls.py
+*cred.py
+./.vagrant
+./Vagrantfile
+./bundle
+scripts/*
