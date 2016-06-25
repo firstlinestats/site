@@ -46,6 +46,10 @@ body {
 table {
     background-color: rgb(255, 255, 255);
 }
+.navbar-text {
+  color: #333;
+  margin: 0;
+}
 .header-img {
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgb(255, 255, 255) 75%), url(../img/BQVDjRg.jpg) no-repeat;
     background-position: center top;
@@ -67,4 +71,9 @@ table {
 .navbar-brand {
     color: black;
     font-weight: bold;
+}
+.navbar-nav.nav-justified > li{
+    float:none;
+    background-color: #BEC5CC;
+    color: black;
 }

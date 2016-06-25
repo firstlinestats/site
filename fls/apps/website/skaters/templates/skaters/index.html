@@ -3,141 +3,556 @@
 {% block page_css %}
 {% endblock %}
 {% block content %}
-  <div class="container">
-    <div style="position: relative; text-align: center; margin-bottom: 5%;">
-      <h3>Top skaters around the leauge.</h3>
+    <div class="container">
+        <div style="position: relative; text-align: center; margin-bottom: 5%;">
+            <h3>Top skaters around the league.</h3>
+        </div>
+        <nav class="navbar navbar-default navbar-lower affix-top" role="navigation">
+            <div class="row">
+                <ul class="nav navbar-nav nav-justified">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Game Type <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/skaters">Pre-Season</a></li>
+                            <li><a href="/skaters/tables">Regular Season</a></li>
+                            <li><a href="/skaters/tables">Playoffs</a></li>
+                            <li><a href="/skaters/tables">All Games</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Stats Type <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/goalies">General</a></li>
+                            <li><a href="/goalies/tables">Advanced</a></li>
+                        </ul>
+                    </li>
+                    <li {% if active_page == "teams" %}class="active"{% endif %}><a href="/teams">Offensive</a></li>
+                    <li {% if active_page == "games" %}class="active"{% endif %}><a href="/games">Defenseive</a></li>
+                    <li {% if active_page == "about" %}class="active"{% endif %}><a href="/about">More</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats-card col-md-3">
+                <table class="table table-striped">
+                    <tbody>
+                        <caption class="stats-caption">Stats Type</caption>
+                        <tr>
+                            <td>1</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FirstName LastName</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="stats-card col-md-3">
-        <table class="table table-striped">
-          <tbody>
-            <caption class="stats-caption">Stats Type</caption>
-            <tr>
-              <td>1</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="stats-card col-md-3">
-        <table class="table table-striped">
-          <tbody>
-            <caption class="stats-caption">Stats Type</caption>
-            <tr>
-              <td>1</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="stats-card col-md-3">
-        <table class="table table-striped">
-          <tbody>
-            <caption class="stats-caption">Stats Type</caption>
-            <tr>
-              <td>1</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="stats-card col-md-3">
-        <table class="table table-striped">
-          <tbody>
-            <caption class="stats-caption">Stats Type</caption>
-            <tr>
-              <td>1</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>FirstName LastName</td>
-              <td>50%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
 {% endblock %}
 {% block page_js %}
 {% endblock %}

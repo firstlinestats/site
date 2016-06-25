@@ -18,6 +18,23 @@
         {% block content %}{% endblock %}
         <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){       
+               var scroll_start = 0;
+               var startchange = $('.nav');
+               var offset = startchange.offset();
+               $(document).scroll(function() { 
+                  scroll_start = $(this).scrollTop();
+                  if(scroll_start > offset.top) {
+                      $('#main-navigation').css('background-color', '#2D303E');
+                      $('.navbar-text').css('color', '#E7E7E1');
+                   } else {
+                      $('#main-navigation').css('background-color', 'transparent');
+                      $('.navbar-text').css('color', '#333');
+                   }
+               });
+            });
+        </script>
         {% block page_js %}{% endblock %}
     </body>
 </html>
