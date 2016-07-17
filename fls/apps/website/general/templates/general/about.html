@@ -1,10 +1,12 @@
 {% extends "wrappers/wrapper.html" %}
+{% load render_bundle from webpack_loader %}
 {% load staticfiles %}
 {% block page_css %}
 {% endblock %}
 {% block content %}
-  <div class="container">
+  <div id="container">
   </div>
+{% render_bundle 'main' %} 
 {% endblock %}
 {% block page_js %}
 {% endblock %}

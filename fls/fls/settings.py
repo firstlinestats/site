@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webpack_loader',
     'apps.website.general',
     'apps.website.teams',
     'apps.website.games', 
@@ -134,3 +135,11 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/apps/website/static/'
+
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': STATIC_URL + 'bundles/',
+        'STATS_FILE': '../webpack-stats.json',
+    }
+}
